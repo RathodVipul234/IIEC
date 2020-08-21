@@ -10,39 +10,33 @@ pyttsx3.speak("How Can I Help You!")
 while True:
     x = input("User Input:")
     # for chrome browser
-    if (("start" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("chrome" in x) or ("browser" in x) or ("google" in x)):
-        print("Rv Assistance : ", end = '')
+    if (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("chrome" in x) or ("browser" in x) or ("google" in x)):
         pyttsx3.speak("Opening Browser please Wait..")
         os.system("Chrome")
 
     #open window media player
-    elif (("start" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("wmplayer" in x) or ("window media player" in x) or ("music app" in x)):
-        print("Rv Assistance : ", end = '')
+    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("wmplayer" in x) or ("window media player" in x) or ("music app" in x)):
         pyttsx3.speak("Opening window media player please Wait..")
         os.system("wmplayer")
 
     #opening notepade
-    elif (("start" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("notepade" in x)):
-        print("Rv Assistance : ")
-        pyttsx3.speak("Opening Notepade please Wait..")
-        os.system("notepade")
+    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("notepad" in x)):
+        pyttsx3.speak("Opening Notepad please Wait..")
+        os.system("notepad")
 
 
     #paint
-    elif (("start" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("paint" in x) or ("drawing app" in x)):
-        print("Rv Assistance : ")
+    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("paint" in x) or ("drawing app" in x)):
         pyttsx3.speak("Opening Paint please Wait..")
-        os.system("paint")
+        os.system("mspaint")
 
     #power point presentation
-    elif (("start" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("ppt" in x) or ("power point" in x) or ("ms office" in x) or ("power point presentation" in x)):
-        print("Rv Assistance : ")
+    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("ppt" in x) or ("power point" in x) or ("ms office" in x) or ("power point presentation" in x)):
         pyttsx3.speak("Opening power point presentation please Wait..")
         os.system("powerpnt")
 
     # exit from rv assistance
     elif ("close" in x) or ("exit" in x) or("stop" in x):
-        print("Rv Assistance : ")
         pyttsx3.speak("Rv Assistance closed.. I really Felling Good To Help You..Thank You")
         quit()
 
