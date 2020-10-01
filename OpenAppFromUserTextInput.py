@@ -16,11 +16,11 @@ while True:
 
     #open window media player
     elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("wmplayer" in x) or ("window media player" in x) or ("music app" in x)):
-        pyttsx3.speak("Opening window media player please Wait..")
+        pyttsx3.speak("Opening windows media player please Wait..")
         os.system("wmplayer")
 
     #opening notepade
-    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("notepad" in x)):
+    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("notepad" in x) or ("text editor" in x):
         pyttsx3.speak("Opening Notepad please Wait..")
         os.system("notepad")
 
@@ -31,15 +31,15 @@ while True:
         os.system("mspaint")
 
     #power point presentation
-    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("ppt" in x) or ("power point" in x) or ("ms office" in x) or ("power point presentation" in x)):
+    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("ppt" in x) or ("power point" in x) or ("power point presentation" in x)):
         pyttsx3.speak("Opening power point presentation please Wait..")
         os.system("powerpnt")
 
     # exit from rv assistance
     elif ("close" in x) or ("exit" in x) or("stop" in x):
-        pyttsx3.speak("Rv Assistance closed.. I really Felling Good To Help You..Thank You")
+        pyttsx3.speak("Rv Assistance closed.. I really Feeling Good To Help You..Thank You")
         quit()
 
 
     else:
-        pyttsx3.speak("i don't understand what u say..am still learning ")
+        pyttsx3.speak("I don't understand what u say..I'm still learning ")
