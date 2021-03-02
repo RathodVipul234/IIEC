@@ -20,7 +20,7 @@ while True:
         os.system("wmplayer")
 
     #opening notepade
-    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("notepad" in x) or ("text editor" in x):
+    elif (("run" in x) or ("execute" in x) or ("launch" in x) or ("open" in x)) and (("notepad" in x) or ("text editor" in x)):
         pyttsx3.speak("Opening Notepad please Wait..")
         os.system("notepad")
 
